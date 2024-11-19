@@ -1,5 +1,5 @@
 import styles from "@/components/HomeContent/HomeContent.module.css";
-import Loading from "../Loading";
+import ListGames from "../ListGames";
 
 const HomeContent = () => {
   return (
@@ -9,7 +9,7 @@ const HomeContent = () => {
           <div className={styles.title}>
             <h2>Lista de jogos</h2>
           </div>
-          <Loading />
+          <ListGames />
           <div className={styles.games} id="games"></div>
         </div>
       </div>

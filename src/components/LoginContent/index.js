@@ -1,6 +1,13 @@
 import styles from "@/components/LoginContent/LoginContent.module.css";
+import { useRouter } from "next/router";
 
 const LoginContent = () => {
+  const router = useRouter();
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    router.push("/home")
+  };
   return (
     <>
       <div className={styles.loginContent}>
@@ -19,7 +26,7 @@ const LoginContent = () => {
           </div>
           {/* FORMULÁRIO */}
           <div className={styles.loginCardBody}>
-            <form className="formPrimary">
+            <form className="formPrimary" onSubmit={handleSubmit}>
               <input
                 type="email"
                 name="email"

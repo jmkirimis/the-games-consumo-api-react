@@ -2,7 +2,7 @@ import Head from "next/head";
 import Container from "@/components/Container";
 import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
-import CreateContent from "@/components/CreateContent";
+import CreateGame from "@/components/CreateGame";
 
 export default function Homepage() {
   return (
@@ -19,7 +19,7 @@ export default function Homepage() {
       <main>
         <Menu />
         <Container>
-          <CreateContent />
+          <CreateGame />
         </Container>
       </main>
       <Footer />
